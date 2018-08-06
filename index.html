@@ -1,8 +1,9 @@
 <html>
     <head>
         <title>AFAS Profit authorisatie key</title>
-        <script src="./base.js?<?= filemtime('./base.js')?>"></script>
+        <script src="./base.js"></script>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     </head>
     <body>
     <div class="container">
@@ -13,17 +14,17 @@
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
       <h1>Invoer</h1>
-      <form>
+      <form onsubmit="confirmInput()">
       <div class="form-group">
     <label for="AfasToken">AFAS User Token</label>
     <input type="text" class="form-control" id="AfasToken" placeholder="<token><version>1</version><data>string</data></token>">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary">Genereer</button>
 </form>
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
       <h1>Output</h1>
-      <div id="OutputDiv"></div>
+      <div id="OutputDiv">Hier komt het resultaat</div>
     </div>
   </div>
 </div>
