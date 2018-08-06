@@ -13,7 +13,7 @@
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
       <h1>Invoer</h1>
-      <form>
+      <form id="AFASForm" action="/index.php">
       <div class="form-group">
     <label for="AfasToken">AFAS User Token</label>
     <input type="text" class="form-control" id="AfasToken" placeholder="<token><version>1</version><data>string</data></token>">
