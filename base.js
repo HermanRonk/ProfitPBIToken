@@ -6,7 +6,7 @@ function confirmInput() {
     token = document.forms[0].AfasToken.value;
     convertedToken = "AfasToken " + btoa(token);
     document.getElementById("OutputDiv").innerHTML = "<p>Dit is de autorisatietoken die je kan gebruiken:</p><p>" + 
-    "    <label for='outputText'>Example textarea</label><textarea class='form-control' id='outputText' rows='3'>" + convertedToken + "</textarea>" + 
+    "<textarea class='form-control' id='outputText' rows='3'>" + convertedToken + "</textarea>" + 
     "</p><p><button onclick='addToClipboard()' type='button' class='btn btn-primary'>Copy</button></p>"
     event.preventDefault();
 }
