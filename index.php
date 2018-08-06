@@ -13,12 +13,12 @@
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
       <h1>Invoer</h1>
-      <form id="AFASForm" action="/index.php">
+      <form id="AFASForm">
       <div class="form-group">
     <label for="AfasToken">AFAS User Token</label>
     <input type="text" class="form-control" id="AfasToken" placeholder="<token><version>1</version><data>string</data></token>">
   </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <button type="submit" class="btn btn-primary" onclick="generateWebAuth()">Submit</button>
 </form>
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
