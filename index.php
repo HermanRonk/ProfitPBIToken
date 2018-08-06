@@ -18,7 +18,7 @@
     <label for="AfasToken">AFAS User Token</label>
     <input type="text" class="form-control" id="AfasToken" placeholder="<token><version>1</version><data>string</data></token>">
   </div>
-  <button type="submit" class="btn btn-primary" onclick="generateWebAuth()">Submit</button>
+  <button class="btn btn-primary" onclick="generateWebAuth()">Submit</button>
 </form>
     </div>
     <div class="col-sm shadow-sm p-3 mb-5 bg-white rounded">
