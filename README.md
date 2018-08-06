@@ -1,11 +1,4 @@
 # ProfitPBIToken
 Genereren van autorisatie key voor Profit / Power BI integratie
 
-User Token uit AFAS Profit:
-
-<token><version>1</version><data>"string"</data></token>
-
-Base 64 + Prepend
-
-"AfasToken base64string"
-
+Het token vanuit AFAS Profit moet omgezet worden naar een base64 token met een voorvoegsel. Middels deze pagina kan dat eenvoudig, de string uit Profit wordt ingevoerd in het textveld en na de conversie heb je mogelijkheid om de gegenereerde authorisatie string te kopieren naar het klembord.
